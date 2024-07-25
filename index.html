@@ -269,124 +269,190 @@ Have fun creating your portfolio on this template!!! -->
         }
       }
     </style>
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Some Projects</h2>
+  <style>
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">ChillChat - Real Time Chat</h3>
-              <p class="project-wrapper__text-info">
-                With ChillChat, users are admitted to a landing page, 
-                followed by a signup or login page that introduces users to a real time chat. 
-                This is a full stack application that has normal accounts, and an admin account
+    .modal-content {
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+    }
 
-                <p>CORS, JavaScript, ReactJS, MySQL</p>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://www.youtube.com/watch?v=kFuWXNQnXHA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Demo</a>
-                <a href="https://github.com/AbdurraoufE/ChillChat" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a>
+    .modal img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Some Projects</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">ChillChat - Real Time Chat</h3>
+            <p class="project-wrapper__text-info">
+              With ChillChat, users are admitted to a landing page,
+              followed by a signup or login page that introduces users to a real-time chat.
+              This is a full-stack application that has normal accounts, and an admin account
+              <p>CORS, JavaScript, ReactJS, MySQL</p>
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://www.youtube.com/watch?v=kFuWXNQnXHA" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See Demo</a>
+              <a href="https://github.com/AbdurraoufE/ChillChat" target="_blank" class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" class="thumbnail-link">
+              <div class="thumbnail rounded">
+                <img src="./assets/ChillChat.png" class="img-fluid" alt="Project Image" width="1366" height="767">
               </div>
-            </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/ChillChat.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Library Management System</h3>
+            <p class="project-wrapper__text-info">
+              A Library Management System web application that tracks usage
+              of books and keep up with trendy books
+              <p>JavaScript, ReactJs, NextJS, TailwindCSS, AWS</p>
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/AbdurraoufE/Library-Management-System/blob/main/README.md#Application-Background" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See Demo</a>
+              <a href="https://github.com/AbdurraoufE/Library-Management-System" target="_blank" class="cta-btn text-color-main">Source Code</a>
             </div>
-          </article>
-          <!-- /END Project -->
+          </div>
 
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Library Management System</h3>
-              <p class="project-wrapper__text-info">
-                A Library Management System web application that tracks usage 
-                of books and keep up with trendy books
-                <p> JavaScript, ReactJs, NextJS, TailwindCSS, AWS</p>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/AbdurraoufE/Library-Management-System/blob/main/README.md#Application-Background"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Demo</a>
-                <a href="https://github.com/AbdurraoufE/Library-Management-System" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a>
+          <div class="project-wrapper__image">
+            <a href="#" class="thumbnail-link">
+              <div class="thumbnail rounded">
+                <img src="./assets/LMS.png" class="img-fluid" alt="Project Image" width="1366" height="767">
               </div>
-            </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/LMS.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">To-Do Application</h3>
+            <p class="project-wrapper__text-info">
+              A To-do phone application that allows users to add and remove
+              items from the list to never miss appointments
+              <p>Dart & Flutter</p>
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/AbdurraoufE/todoApp#Application-Background" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See Demo</a>
+              <a href="https://github.com/AbdurraoufE/todoApp" target="_blank" class="cta-btn text-color-main">Source Code</a>
             </div>
-          </article>
-          <!-- /END Project -->
+          </div>
 
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">To-Do Application</h3>
-              <p class="project-wrapper__text-info">
-                A To-do phone application that allows users to add and remove
-                 items from the list to never miss appointments
-                 <p>Dart & Flutter</p>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/AbdurraoufE/todoApp#Application-Background"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Demo</a>
-                <a href="https://github.com/AbdurraoufE/todoApp" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a>
+          <div class="project-wrapper__image">
+            <a href="#" class="thumbnail-link">
+              <div class="thumbnail rounded">
+                <img src="./assets/todogif.gif" class="img-fluid" alt="Project Image" style="width: 500px; height: 750px;">
               </div>
-            </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+      </div>
+    </div>
+  </section>
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/todogif.gif"
-                    class="img-fluid"
-                    alt="Project Image"
-                    style="width: 500px; height: 750px;"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-        </div>
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("imageModal");
+    
+      // Get all thumbnail links
+      var thumbnails = document.querySelectorAll(".thumbnail-link");
+      var modalImg = document.getElementById("modalImage");
+      var captionText = document.getElementById("caption");
+    
+      // Function to open the modal
+      function openModal(imageSrc, altText) {
+        modal.style.display = "flex";
+        modalImg.src = imageSrc;
+        captionText.innerHTML = altText;
+      }
+    
+      // Set up event listeners for thumbnails
+      thumbnails.forEach(function(thumbnail) {
+        thumbnail.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent default link behavior
+          var img = this.querySelector("img");
+          openModal(img.src, img.alt);
+        });
+      });
+    
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+    
+      // When the user clicks on <span> (x), close the modal
+      span.addEventListener("click", function() {
+        modal.style.display = "none";
+      });
+    
+      // Close the modal if the user clicks anywhere outside of the modal
+      window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      });
+    
+      // Optional: Initialize modal state to hidden in case of any script issues
+      document.addEventListener("DOMContentLoaded", function() {
+        modal.style.display = "none";
+      });
+    </script>
       </div>
       
     </section>
